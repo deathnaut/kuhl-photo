@@ -55,7 +55,7 @@ a:hover {
 
 h3 .image-carousel {
   display: table-cell;
-vertical-align: middle;
+  vertical-align: middle;
 }
 
 .recent-work {
@@ -63,15 +63,70 @@ vertical-align: middle;
   height: 200px;
   display: flex;
   justify-content: space-around;
-  border: 2px solid green;
-  background-color: rgba(0, 255, 255, 0.2);
+  /*border: 2px solid green;*/
+  /*background-color: rgba(0, 255, 255, 0.2);*/
 }
 
-#recent-box {
+.recent-box {
   width: 300px;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
+  color: white;
+  position: relative;
+}
+
+div .recent-box a {
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding-left: 2px;
+}
+
+.recent-box#event1 {
+  background-image: url('https://static.pexels.com/photos/154147/pexels-photo-154147.jpeg');
+  background-size: cover;
+}
+
+.recent-box#event2 {
+  background-image: url('https://static.pexels.com/photos/266429/pexels-photo-266429.jpeg');
+  background-size: cover;
+}
+
+.recent-box#event3 {
+  background-image: url('https://static.pexels.com/photos/67304/dog-animal-friend-loyalty-67304.jpeg');
+  background-size: cover;
+}
+
+.about-content {
+  display: inline-block;
+  margin-left: 5px;
+  max-width: 300px;
+  text-align: left;
+}
+
+
+#icon {
+  display: inline-block;
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 50%;
 }
 
 .contact {
   background-color: rgba(255, 255, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  background-color: black;
+}
+
+#social {
+  max-width: 50px;
+  max-height: 50px;
+  filter: invert(100%);
 }
