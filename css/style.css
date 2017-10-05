@@ -44,18 +44,41 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-.image-carousel {
-  height: 500px;
-  width: 1000px;
-  background-color: rgba(255, 0, 0, 0.5);
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+.container {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-h3 .image-carousel {
-  display: table-cell;
-  vertical-align: middle;
+.image-carousel {
+
+  height: 500px;
+  width: 1000px;
+
+}
+
+#slideshow {
+  /*display: inline-block;*/
+  position: relative;
+  max-height: 500px;
+  max-width: 1000px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    max-height: 500px;
+    max-width: 1000px;
+    margin: 0 12%;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
 }
 
 .recent-work {
@@ -85,17 +108,17 @@ div .recent-box a {
 }
 
 .recent-box#event1 {
-  background-image: url('https://static.pexels.com/photos/154147/pexels-photo-154147.jpeg');
+  background-image: url('https://scontent.fads1-1.fna.fbcdn.net/v/t31.0-8/21743791_10210174525549373_5194217036593096213_o.jpg?oh=9aaa04956c69706652e6e6fb532225cc&oe=5A7E9883');
   background-size: cover;
 }
 
 .recent-box#event2 {
-  background-image: url('https://static.pexels.com/photos/266429/pexels-photo-266429.jpeg');
+  background-image: url('https://scontent.fads1-1.fna.fbcdn.net/v/t1.0-9/15697487_10208050728255768_2738118978997847066_n.jpg?oh=bcf3d9ea494221fb90e0d2325a713896&oe=5A817CAF');
   background-size: cover;
 }
 
 .recent-box#event3 {
-  background-image: url('https://static.pexels.com/photos/67304/dog-animal-friend-loyalty-67304.jpeg');
+  background-image: url('https://scontent.fads1-1.fna.fbcdn.net/v/t1.0-9/18274884_10209105228817623_1307795171351621605_n.jpg?oh=e020ae3665da23c12b7d9b4895de1806&oe=5A79995B');
   background-size: cover;
 }
 
